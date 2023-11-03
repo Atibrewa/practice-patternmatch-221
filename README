@@ -1,0 +1,20 @@
+Homework 3 Programming Question
+
+@author Aahanaa Tibrewal (Github:Atibrewa)
+
+Algorithm StringMatch(txt,pat)
+# txt is a string we are checking
+# pat is a the pattern we are checking for in t
+t = length of txt
+p = length of pat
+patHash = hashCode of pat
+for i = 0 to (t-p+1)
+    chunk = substring of txt from i to i+p
+    if hash(chunk) == patHash
+        for a = 0 to p-1
+            if pat[a]==chunk[a]
+                continue
+            else
+                break
+        print (pattern found at index i)
+        
